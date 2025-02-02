@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="47"
+    android:versionName="4.7"
+    android:compileSdkVersion="33"
+    android:compileSdkVersionCodename="13"
+    package="com.gamabets"
+    platformBuildVersionCode="33"
+    platformBuildVersionName="13">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33" />
+
+    <meta-data
+        android:name="firebase_crashlytics_collection_enabled"
+        android:value="true" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <queries>
+
+        <package
+            android:name="com.whatsapp" />
+
+        <package
+            android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE" />
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.MAIN" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <data
+                android:mimeType="*/*"
+                android:scheme="*" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.VIEW" />
+
+            <category
+                android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:mimeType="*/*"
+                android:scheme="upi"
+                android:host="pay" />
+        </intent>
+
+        <intent>
+
+            <action
+                android:name="android.intent.action.SEND" />
+
+            <data
+                android:mimeType="*/*" />
+        </intent>
+
+        <package
+            android:name="com.google.android.apps.maps" />
+
+        <intent>
+
+            <action
+                android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <application
+        android:theme="@ref/0x7f120009"
+        android:label="@ref/0x7f110031"
+        android:icon="@ref/0x7f080179"
+        android:name="com.gamabets.chat.ChatApplication"
+        android:debuggable="false"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@ref/0x7f08017c"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true">
+
+        <activity
+            android:name="com.gamabets.ui.activity.ManualDepositActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.SumitIdeaActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.VideosActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.AccountStatementActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.BankDetailActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.PassbookActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x480"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.chat.ui.VideoPlayerActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.NetBankingActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x10" />
+
+        <activity
+            android:theme="@ref/0x7f120295"
+            android:name="com.gamabets.ui.activity.PermissionActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.ForgetUserNameActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f12000b"
+            android:name="com.gamabets.chat.ui.ViewImagesActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.SubmitOtpUdpateDeviceActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.MpinPasswordChangedSuccessfullyActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f12000b"
+            android:name="com.gamabets.chat.ui.FullScreenImageActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f120295"
+            android:name="com.gamabets.ui.activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gamabets.ui.activity.ChangePasswordActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.JackpotDashBoardActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.StarLineGameListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.StarlineGameActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.StarlineDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.GameListFromDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.chat.ui.ChatBoardActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x3" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.FundsActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f120295"
+            android:name="com.gamabets.ui.NavigationMainActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:theme="@ref/0x7f120295"
+            android:name="com.gamabets.utils.BaseActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.JackpotGameActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.JackpotGameListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.MainGameFromListActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.BidsHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.ForgotPasswordOtpVerifyActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.activity.ChangeMpinActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.gamabets.ui.login_signup_pages.LoginSignUpActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:configChanges="0x4a0"
+            android:windowSoftInputMode="0x14" />
+
+        <activity
+            android:name="com.gamabets.utils.GameBaseActivity"
+            android:exported="false"
+            android:screenOrientation="1"
+            android:windowSoftInputMode="0x23" />
+
+        <activity
+            android:name="com.switchpay.android.SwitchPayActivity"
+            android:launchMode="1"
+            android:configChanges="0x200" />
+
+        <service
+            android:name="com.gamabets.utils.MyFirebaseMessagingService"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel"
+                android:value="@ref/0x7f110072" />
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.gamabets.provider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150002" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name="com.test.pg.secure.pgsdkv4.PaymentGatewayPaymentActivity" />
+
+        <activity
+            android:theme="@ref/0x7f120243"
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:screenOrientation="1" />
+
+        <activity
+            android:theme="@ref/0x7f1202fa"
+            android:name="com.paytm.pgsdk.AioMatchUserActivity" />
+
+        <service
+            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+            android:exported="false" />
+
+        <service
+            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+            android:exported="false" />
+
+        <service
+            android:name="easypay.appinvoke.utils.EasyPayConfigDownloader"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <service
+            android:name="easypay.appinvoke.utils.AnalyticsService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity" />
+
+        <provider
+            android:name="com.kbeanie.multipicker.utils.AMPFileProvider"
+            android:exported="false"
+            android:authorities="com.gamabets.multipicker.fileprovider"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@ref/0x7f150001" />
+        </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f120119"
+            android:name="com.razorpay.CheckoutActivity"
+            android:exported="true"
+            android:configChanges="0x4b0">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:scheme="io.rzp"
+                    android:host="rzp.io" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.plugin.googlepay_all"
+            android:value="com.razorpay.RzpGpayMerged" />
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <intent-filter
+                android:priority="-500">
+
+                <action
+                    android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            android:directBootAware="true">
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.gamabets.firebaseinitprovider"
+            android:initOrder="100"
+            android:directBootAware="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0b000b" />
+
+        <activity
+            android:theme="@ref/0x1030010"
+            android:name="com.jakewharton.processphoenix.ProcessPhoenix"
+            android:exported="false"
+            android:process=":phoenix" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.gamabets.androidx-startup">
+
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+</manifest>
